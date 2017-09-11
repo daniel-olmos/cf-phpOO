@@ -1,9 +1,19 @@
 <?php namespace Controllers;
+
+	use Models\Estudiante as Estudiante;
 	
 	class estudiantesController{
+
+		private $estudiante;
+
+		public function __construct(){
+			$this->estudiante = new Estudiante();
+		}
 		public function index(){
-			print "Hola soy el index de estudiantes";
+			$datos = $this->estudiante->listar();
+			return $datos;
 		}
 	}
+	$estudiantes = new estudiantesController();
 
 ?>

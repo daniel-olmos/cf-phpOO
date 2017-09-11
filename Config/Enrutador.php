@@ -21,12 +21,14 @@
 					call_user_func_array(array($controlador, $metodo), $argumento);
 				}
 			}
+
+			//CARGAR VISTA
+			$ruta = ROOT . "Views" . DS . $request->getControlador() . DS . $request->getMetodo() . ".php";
+			if(is_readable($ruta)){
+				require_once $ruta;
+			}else{
+				print "No se encontro la ruta";
+			}
 		}
-	}
-	
-	if(isset($_GET['url'])){
-		$url = filter_input(INPUT_GET, 'url', FILTER_SANITIZE_URL);
-		$url = explode('/', $url);
-		$url = array_filter($url);
 	}
 ?>

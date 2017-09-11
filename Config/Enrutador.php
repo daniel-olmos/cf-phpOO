@@ -15,7 +15,7 @@
 				require_once $ruta;
 				$mostrar = "Controllers\\" . $controlador;
 				$controlador = new $mostrar;
-				if(!isset($metodo)){
+				if(!isset($argumento)){
 					call_user_func(array($controlador, $metodo));
 				}else{
 					call_user_func_array(array($controlador, $metodo), $argumento);

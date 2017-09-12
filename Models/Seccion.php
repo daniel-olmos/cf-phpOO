@@ -41,7 +41,7 @@
 
 		public function view(){
 			$sql = "SELECT * FROM secciones WHERE id = '{$this->id}'";
-			$datos = $this->con->consultaRetorno($datos);
+			$datos = $this->con->consultaRetorno($sql);
 			$row = mysqli_fetch_assoc($datos);
 			return $row;
 		}

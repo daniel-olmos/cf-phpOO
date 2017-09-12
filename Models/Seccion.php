@@ -19,7 +19,7 @@
 		}
 
 		public function listar(){
-			$sql = "SELECT * FROM secicones";
+			$sql = "SELECT * FROM secciones";
 			$datos = $this->con->consultaRetorno($sql);
 			return $datos;
 		}

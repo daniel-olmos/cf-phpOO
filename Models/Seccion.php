@@ -25,7 +25,7 @@
 		}
 
 		public function add(){
-			$sql = "INSERT INTO Secciones (id, nombre) VALUES (null, '{$this->nombre}')";
+			$sql = "INSERT INTO secciones (id, nombre) VALUES (null, '{$this->nombre}')";
 			$this->con->consultaSimple($sql);
 		}
 

@@ -3,7 +3,7 @@ body{
 }
 footer{
 	background-color: #eee;
-	border-top: 10px solid #bbb;
+	border-top: 2px solid #bbb;
 	font-size: 14px;
 	padding: 20px;
 	text-align: center;
@@ -11,7 +11,7 @@ footer{
 .box-principal{
 	margin-left: auto;
 	margin-right: auto;
-	width: 60%;
+	width: 70%;
 }
 .titulo{
 	text-align: center;

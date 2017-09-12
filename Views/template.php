@@ -56,7 +56,7 @@
 
 		public function __destruct(){
 ?>			
-			<footer class="navbar-fixed-bottom">
+			<footer class="">
 				Todos los derechos reservados &copy 2017 <br>
 				Eduardo Rahn @edu1590 <b>Eduardo1590</b>
 			</footer>
